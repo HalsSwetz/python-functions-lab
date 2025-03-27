@@ -193,11 +193,11 @@ def basic_calculator(num1, num2, opp):
     elif opp == 'multiply':
         return num1 * num2
     elif opp == 'divide':
-        if num2 != 0:
-            return num1/num2
-        else:
+        if num2 == 0:
             return "Error"
+        else:
+            return num1/num2
 
 
 
-print('Exercise 9 Result:', basic_calculator(10, 9, "multiply"))
+print('Exercise 9 Result:', basic_calculator(10, 2, "divide"))
